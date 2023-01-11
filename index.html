@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/logo.svg" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome Script -->
+    <script
+      src="https://kit.fontawesome.com/6c43f4ca38.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@700&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Homestead</title>
+    <style>
+      :root {
+        --primary-color1: #2baf66;
+        --font-Metropolis-Reg: 'Metropolis-Regular';
+        --font-Metropolis-Bold: 'Metropolis-Bold';
+      }
+      @font-face {
+        font-family: Metropolis-Regular;
+        src: url(./fonts/Metropolis-Regular.otf);
+      }
+      @font-face {
+        font-family: Metropolis-Bold;
+        src: url(./fonts/Metropolis-Bold.otf);
+      }
+
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .ads-logo {
+        width: 150px;
+        object-fit: fill;
+      }
+      .form-control {
+        border: 0;
+        font-family: var(--font-Metropolis-Reg);
+        padding: 0.5rem;
+        border-bottom: 1px solid #000;
+        border-radius: 0;
+      }
+      .label-sm {
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .input-bb {
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1px solid #000;
+      }
+
+      span {
+        width: 200px;
+      }
+      i {
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        padding: 1rem;
+
+        border-radius: 100px;
+      }
+      label {
+        text-transform: uppercase;
+        font-family: var(--font-Metropolis-Reg);
+        font-weight: 700;
+        padding: 1rem 0;
+      }
+
+      body {
+        font-family: var(--font-Metropolis-Reg);
+        line-height: 1rem;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: 'Playfair Display', serif;
+      }
+      /* Font Classes */
+      .text-pf {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+      }
+      .text-metro-reg {
+        font-family: var(--font-Metropolis-Reg);
+        font-weight: 400;
+      }
+      .fw {
+        font-weight: 800;
+      }
+      .bg-green {
+        background-color: var(--primary-color1);
+      }
+      .btn-dark {
+        border-radius: 0;
+        width: 200px;
+        padding: 0.7rem 1.5rem;
+        font-family: var(--font-Metropolis-Reg);
+      }
+      .btn-dark:hover {
+        background-color: transparent;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container">
+      <nav class="navbar">
+        <img
+          class="text-center"
+          width="200px"
+          src="./icons/logo.svg"
+          alt="Homestead Logo"
+        />
+      </nav>
+    </div>
+    <!-- Headline Complex Section -->
+    <section id="headline-complex" class="mt-5">
+      <div class="container">
+        <h1 class="text-pf text-center py-5">
+          Sed ut perspiciatis unde omnis iste
+        </h1>
+      </div>
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-lg-6 text-center p-2">
+            <img class="img-fluid w-75" src="./images/zack.png.png" alt="" />
+          </div>
+          <div class="col-lg-6 lh-lg p-4 position-relative">
+            <p class="text-metro-reg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing eli
+            </p>
+            <ul class="ms-4 pb-5">
+              <li class="text-metro-reg">
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua
+              </li>
+              <li class="text-metro-reg">
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              </li>
+              <li class="text-metro-reg">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore
+              </li>
+              <li class="text-metro-reg">
+                xcepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum
+              </li>
+            </ul>
+            <div class="row pt-5">
+              <button class="btn btn-dark btn-block text-metro-reg">
+                Free Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo Section -->
+    <section id="logo-section" class="my-5 bg-light py-5">
+      <h2 class="text-center">Sed ut perspiciatis unde omnis iste</h2>
+      <div
+        class="container d-flex flex-wrap justify-content-around align-items-center"
+      >
+        <img class="ads-logo rounded m-1" src="./images/fb-ads.png" alt="" />
+        <img class="ads-logo rounded m-1" src="./images/tik-tok.jpg" alt="" />
+        <img
+          class="ads-logo rounded m-1"
+          src="./images/Google_Ads_logo.svg.png"
+          alt=""
+        />
+        <img
+          class="ads-logo rounded m-1"
+          src="./images/snapchat-ads.png"
+          alt=""
+        />
+        <img
+          class="ads-logo rounded m-1"
+          src="./images/youtube-ads.png"
+          alt=""
+        />
+        <img
+          class="ads-logo rounded m-1"
+          src="./images/Shopify-Logo.png"
+          alt=""
+        />
+        <img
+          class="ads-logo rounded m-1"
+          src="./images/klaviyo-logo.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- Testimotials Section -->
+
+    <section id="testimonials ">
+      <div class="container">
+        <h2 class="py-5 text-center">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit
+        </h2>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 py-3 d-flex justify-content-center">
+            <iframe
+              class="object-fit-contain"
+              width="420"
+              height="345"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+            >
+            </iframe>
+          </div>
+          <div class="col-md-12 col-lg-6 py-3">
+            <p>
+              <em> ""Sed ut perspiciatis unde omnis iste natus error sit"</em>
+            </p>
+            <p>voluptatem accusantium...</p>
+            <ul>
+              <li class="mb-3">architecto beatae vitae dicta sunt explicabo</li>
+              <li class="mb-3">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+              </li>
+              <li class="mb-3">
+                aut odit aut fugit, sed quia consequuntur magni dolores eos
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-light">
+        <div class="container">
+          <div
+            class="row my-5 py-5 d-flex justify-content-between col-10 m-auto"
+          >
+            <div class="col-sm-4 p-2 d-flex flex-column justify-content-start">
+              <div class="text-center mb-3">
+                <img
+                  class="object-fit-contain"
+                  width="150px"
+                  height="75px"
+                  src="./images/google-logo.png"
+                  alt=""
+                />
+              </div>
+              <p class="">
+                <em
+                  >“Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit"</em
+                >
+              </p>
+              <p class="text-center">- Zack Miller, Founder/ CEO of Google</p>
+            </div>
+            <div
+              class="col-sm-4 col-lg-4 p-2 d-flex flex-column justify-content-start"
+            >
+              <div class="text-center mb-3">
+                <img
+                  class="object-fit-contain"
+                  width="150px"
+                  height="75px"
+                  src="./images/Facebook-logo.png"
+                  alt=""
+                />
+              </div>
+              <p class="">
+                <em
+                  >“ed quia non numquam eius modi tempora incidunt ut labore et
+                  dolore magnam aliquam quaerat voluptatem."
+                </em>
+              </p>
+              <p class="text-center">- Zack Miller, Founder/ CEO of Facebook</p>
+            </div>
+            <div
+              class="col-sm-4 col-lg-4 p-2 d-flex flex-column justify-content-start"
+            >
+              <div class="text-center mb-3">
+                <img
+                  class="object-fit-contain"
+                  width="150px"
+                  height="75px"
+                  src="./images/tiktok-logo.png"
+                  alt=""
+                />
+              </div>
+
+              <p class="">
+                <em
+                  >“...Ut enim ad minima veniam, quis nostrum exercitationem
+                  ullam corporis suscipit laboriosam."
+                </em>
+              </p>
+              <p class="text-center">- Zack Miller, Founder/ CEO of Tiktok</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <button class="btn btn-lg btn-dark fw my-3">START TODAY</button>
+      </div>
+    </section>
+    <section class="py-5" id="features-benefits">
+      <div class="container">
+        <h2 class="py-2">
+          vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+        </h2>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident
+        </p>
+        <div class="row my-5 col-lg-10 col-md-12 m-auto">
+          <div class="col-6">
+            <i class="fa-regular fa-thumbs-up bg-primary"></i>
+            <h3><strong>similique sunt in</strong></h3>
+            <p>
+              Trigger the right emails at the right time with complex marketing
+              automation flows.
+            </p>
+          </div>
+          <div class="col-6">
+            <i class="fa-regular fa-envelope bg-dark"></i>
+            <h3><strong>culpa qui officia</strong></h3>
+            <p>
+              Change the content of emails depending on who is reading them.
+            </p>
+          </div>
+        </div>
+        <div class="row col-lg-10 col-md-12 m-auto">
+          <div class="col-6">
+            <i class="fa-solid fa-envelope-open-text bg-warning"></i>
+            <h3><strong>deserunt mollitia animi</strong></h3>
+            <p>
+              We’ll write email copy that will build relationships and increase
+              sales.
+            </p>
+          </div>
+          <div class="col-6">
+            <i class="fa-solid fa-envelope-open bg-success"></i>
+            <h3><strong>laborum et dolorum</strong></h3>
+            <p>
+              All emails will be designed to reflect and represent your brand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid my-5" id="process">
+      <div class="container">
+        <h2 class="py-3">
+          Et harum quidem rerum facilis est et expedita distinctio
+        </h2>
+        <p class="mb-5">
+          Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+          impedit quo minus id quod maxime placeat facere possimus, omnis
+          voluptas assumenda est, omnis dolor repellendus.
+        </p>
+        <!-- Step 1 -->
+        <div class="step-1 col-md-12 col-lg-12 m-auto my-5">
+          <h3 class="py-2 text-center my-5">Step 1</h3>
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="accordion accordion-collapse" id="step-1">
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading-1-a">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#step-1-a"
+                      aria-expanded="false"
+                      aria-controls="step-1-a"
+                    >
+                      Lorem ipsum dolor
+                    </button>
+                  </h3>
+                  <div
+                    id="step-1-a"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-1-a"
+                    data-bs-parent="#step-1"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                      <br />
+                      <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading-1-b">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#step-1-b"
+                      aria-expanded="false"
+                      aria-controls="step-1-b"
+                    >
+                      consectetur adipiscing elit
+                    </button>
+                  </h3>
+                  <div
+                    id="step-1-b"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-1-b"
+                    data-bs-parent="#step-1"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                      <br />
+                      <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading-1-c">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#step-1-c"
+                      aria-expanded="false"
+                      aria-controls="step-1-c"
+                    >
+                      do eiusmod tempor
+                    </button>
+                  </h3>
+                  <div
+                    id="step-1-c"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-1-c"
+                    data-bs-parent="#step-1"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                      <br />
+                      <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                      <p>
+                        purchases, limited time offer, or something more
+                        specific. We’ll run tests to determine the right offer
+                        for your flow.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Step 2  -->
+        <div class="step-2 col-md-12 col-lg-12 m-auto my-5">
+          <h3 class="py-2 text-center my-5">Step 2</h3>
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="accordion" id="step-2">
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading-2-a">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#step-2-a"
+                      aria-expanded="false"
+                      aria-controls="step-2-a"
+                    >
+                      Lorem ipsum dolor
+                    </button>
+                  </h3>
+                  <div
+                    id="step-2-a"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-2-a"
+                    data-bs-parent="#step-2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                      <br />
+                      <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading-2-b">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#step-2-b"
+                      aria-expanded="false"
+                      aria-controls="step-2-b"
+                    >
+                      consectetur adipiscing elit
+                    </button>
+                  </h3>
+                  <div
+                    id="step-2-b"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-2-b"
+                    data-bs-parent="#step-2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                      <br />
+                      <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading-2-c">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#step-2-c"
+                      aria-expanded="false"
+                      aria-controls="step-2-c"
+                    >
+                      do eiusmod tempor
+                    </button>
+                  </h3>
+                  <div
+                    id="step-2-c"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-2-c"
+                    data-bs-parent="#step-2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                      <br />
+                      <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="step-3 col-md-12 col-lg-12 m-auto my-5">
+          <h3 class="py-2 text-center my-5">Step 3</h3>
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="accordion" id="step-3">
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading-3-a">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#step-3-a"
+                      aria-expanded="false"
+                      aria-controls="step-3-a"
+                    >
+                      Lorem ipsum dolor
+                    </button>
+                  </h3>
+                  <div
+                    id="step-3-a"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-3-a"
+                    data-bs-parent="#step-3"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                      <br />
+                      <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading-3-b">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#step-3-b"
+                      aria-expanded="false"
+                      aria-controls="step-3-b"
+                    >
+                      consectetur adipiscing elit
+                    </button>
+                  </h3>
+                  <div
+                    id="step-3-b"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-3-b"
+                    data-bs-parent="#step-3"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                      <br />
+                      <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading-3-c">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#step-3-c"
+                      aria-expanded="false"
+                      aria-controls="step-3-c"
+                    >
+                      do eiusmod tempor
+                    </button>
+                  </h3>
+                  <div
+                    id="step-3-c"
+                    class="accordion-collapse collapse collapsed"
+                    aria-labelledby="heading-3-c"
+                    data-bs-parent="#step-3"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                      <br />
+                      <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="my-5">
+      <div class="header d-flex position-relative">
+        <h2 class="mx-auto p-5" style="font-size: 80px">Contact Us</h2>
+        <svg
+          class="position-absolute"
+          style="width: 8rem; z-index: -1; left: 47%; top: 3.5rem"
+          viewBox="0 0 865 592"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M414.2 591.95C338.1 590.84 260.82 580.34 187.23 550.84C153.01 537.13 118.83 522.77 87.98 502.03C57.76 481.71 32.63 456.64 17.28 422.99C7.28003 401.06 3.16003 377.68 0.960027 353.85C-1.11997 331.34 0.330026 309.35 8.74003 288.04C19.91 259.75 38.46 237.1 62.79 219.56C85.86 202.93 109.73 187.35 133.75 172.09C170.99 148.45 205.44 121.26 238.94 92.68C269.34 66.75 301.83 43.97 339.12 28.66C375 13.92 412.27 5.00996 450.84 2.02996C563.81 -6.70003 664.94 25.81 754.64 93.34C812.04 136.55 848.34 194.75 860.38 265.95C872.6 338.21 854.47 402.79 803.92 456.93C771.89 491.24 733.14 516.26 690.78 535.98C641.38 558.99 589.38 573.16 535.78 582.07C496.42 588.61 456.76 591.29 414.2 591.95V591.95Z"
+            fill="#e8e5de"
+          ></path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="col-10 m-auto">
+          <form
+            action=""
+            class="col-10 p-5 m-auto"
+            style="border: 1px solid #000"
+          >
+            <div class="row d-flex justify-content-between py-3">
+              <div class="col-sm-12 col-lg d-flex flex-column">
+                <label for="name" class="">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  id="name"
+                />
+              </div>
+              <div class="col-sm-12 col-lg d-flex flex-column">
+                <label for="email">Email</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Your Email"
+                  id="email"
+                />
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between py-3">
+              <div class="col-sm-12 col-lg d-flex flex-column">
+                <label for="company">Company</label>
+                <input type="text" id="company" class="form-control" />
+              </div>
+              <div class="col-sm-12 col-lg d-flex flex-column">
+                <label for="website">Website</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between py-3">
+              <div class="col-sm-12 col-lg d-flex flex-column">
+                <label for="how">How did you hear about Homestead?</label>
+                <input
+                  type="text"
+                  id="company"
+                  class="form-control"
+                  placeholder="Word of mouth, Twitter, Podcast, etc."
+                />
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between py-3">
+              <div class="col-sm-12 col-lg d-flex flex-column">
+                <label for="how"
+                  >What are you looking for in a growth marketing
+                  partner?</label
+                >
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="5"
+                  placeholder="Your Ideal partner is..."
+                ></textarea>
+              </div>
+            </div>
+            <hr />
+            <p class="fw" style="font-size: 1rem">Technical Questions</p>
+            <p class="text-secondary">
+              Please provide an overview of your advertising and growth goals.
+            </p>
+
+            <div class="row d-flex justify-content-center">
+              <!--  Monthly -->
+              <div
+                class="col-sm-12 col-lg-3 d-flex flex-column"
+                id="monthly_group"
+              >
+                <label for="monthly" class="label-sm">Monthly ad budget</label>
+                <select name="monthly_ad_budget " class="py-2">
+                  <option value="">Your monthly ad budget</option>
+                  <option value="$0-$15k">$0 - $15k</option>
+                  <option value="$15 - $50k">$15 - $50k</option>
+                  <option value="$50k - $100k">$50k - $100k</option>
+                  <option value="$100k-$500k">$100k-$500k</option>
+                  <option value="$500k+">$500k+</option>
+                </select>
+              </div>
+              <!-- Annually -->
+              <div class="col-sm-12 col-lg-3" id="annual_group">
+                <label for="annual" class="label-sm">Annual Revenue</label>
+                <select name="annual_revenue" class="py-2" id="annual_revenue">
+                  <option value="">Your annual revenue</option>
+                  <option value="$0-$1M">$0 - $1M</option>
+                  <option value="$1M - $5M">$1M - $5M</option>
+                  <option value="$5M - $10M">$5M - $10M</option>
+                  <option value="$10M - $50M">$10M - $50M</option>
+                </select>
+              </div>
+            </div>
+            <!-- Paid Social Group -->
+            <div class="row d-flex justify-content-center paid-social-group">
+              <!-- FB Group -->
+              <div class="col-sm-12 col-lg-3 d-flex flex-column">
+                <span
+                  ><label for="fb-monthly-spend" class="label-sm"
+                    >facebook monthly spend</label
+                  ></span
+                >
+                <input type="text" placeholder="$50k" class="input-bb" />
+              </div>
+              <div class="col-sm-12 col-lg-3 d-flex flex-column">
+                <label for="fb-monthly-spend" class="label-sm"
+                  >facebook roas goal</label
+                >
+                <input type="text" placeholder="2.5" class="input-bb" />
+              </div>
+            </div>
+            <!-- Snapchat Group -->
+            <div class="row d-flex justify-content-center paid-social-group">
+              <div class="col-sm-12 col-lg-3 d-flex flex-column">
+                <span
+                  ><label for="sc-monthly-spend" class="label-sm"
+                    >snapchat monthly spend</label
+                  ></span
+                >
+                <input type="text" placeholder="$50k" class="input-bb" />
+              </div>
+              <div class="col-sm-12 col-lg-3 d-flex flex-column">
+                <label for="sc-monthly-spend" class="label-sm"
+                  >snapchat roas goal</label
+                >
+                <input type="text" placeholder="2.5" class="input-bb" />
+              </div>
+            </div>
+            <!-- Tiktok Group -->
+            <div class="row d-flex justify-content-center paid-social-group">
+              <div class="col-sm-12 col-lg-3 d-flex flex-column">
+                <span
+                  ><label for="tiktok-monthly-spend" class="label-sm"
+                    >tiktok monthly spend</label
+                  ></span
+                >
+                <input type="text" placeholder="$50k" class="input-bb" />
+              </div>
+              <div class="col-sm-12 col-lg-3 d-flex flex-column">
+                <label for="tiktok-monthly-spend" class="label-sm"
+                  >tiktok roas goal</label
+                >
+                <input type="text" placeholder="2.5" class="input-bb" />
+              </div>
+            </div>
+            <!-- Google Group -->
+            <div class="row d-flex justify-content-center paid-social-group">
+              <div class="col-sm-12 col-lg-3 d-flex flex-column">
+                <span
+                  ><label for="google-monthly-spend" class="label-sm"
+                    >Google monthly spend</label
+                  ></span
+                >
+                <input type="text" placeholder="$50k" class="input-bb" />
+              </div>
+              <div class="col-sm-12 col-lg-3 d-flex flex-column">
+                <label for="google-monthly-spend" class="label-sm"
+                  >Google roas goal</label
+                >
+                <input type="text" placeholder="2.5" class="input-bb" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <label for="email-market" class="label-sm"
+                  >who manages your email marketing campaign?</label
+                >
+                <input
+                  type="text"
+                  class="input-bb"
+                  placeholder="Inhouse or agency/contractor"
+                />
+              </div>
+            </div>
+            <!-- Website Updates -->
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <label for="website-update" class="label-sm"
+                  >Who manages your website updates?</label
+                >
+                <input
+                  type="text"
+                  class="input-bb"
+                  placeholder="Inhouse or agency/contractor"
+                  id="website-update"
+                />
+              </div>
+            </div>
+            <!-- Creative Assets -->
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <label for="website-update" class="label-sm"
+                  >Who manages shooting creative assets for ads, emails, and
+                  web?</label
+                >
+                <input
+                  type="text"
+                  class="input-bb"
+                  placeholder="Inhouse or agency/contractor"
+                  id="website-update"
+                />
+              </div>
+            </div>
+            <div class="submit-row mt-3">
+              <button
+                type="submit"
+                id="submit"
+                class="btn btn-dark btn-lg"
+                style="width: 200px"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
